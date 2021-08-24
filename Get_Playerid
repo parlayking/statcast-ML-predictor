@@ -1,0 +1,12 @@
+import pandas as pd
+import pybaseball as pyb
+import numpy as np
+
+def get_playerid(player):
+  id = pyb.playerid_lookup(player)
+  return id['key_mlbam']
+    def get_players_SC_data(player)
+      data = pyb.statcast_batter(player,id['key_mlbam'])
+      return(data)
+      
+get_playerid(
